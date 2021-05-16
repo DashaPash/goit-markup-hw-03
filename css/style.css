@@ -97,11 +97,13 @@ body {
 /*----------------Компоненты конец---------*/
 
 /*--------------- Шапка сайта-------------*/
+.header-section {
+  border-bottom: 1px solid #ececec;
+}
 
 .header-flex {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .header-flex > .logo {
@@ -184,10 +186,8 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
   letter-spacing: 0.06em;
 
-  display: inline-block;
   padding: 10px 32px;
   border-radius: 4px;
   min-width: 200px;
@@ -242,16 +242,12 @@ body {
 
 .about-list {
   display: flex;
-}
-
-.about-list-item:not(:last-child) {
-  margin-right: 30px;
+  justify-content: space-between;
 }
 
 /*--------------------Секция Чем Мы Занимаемся Конец---------------*/
 
 /*--------------------Секция Наша Команда--------------------------*/
-
 .team {
   background-color: var(--grey-background-color);
 }
@@ -262,8 +258,6 @@ body {
 
 .team-list {
   display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .team-list-item {
@@ -271,11 +265,11 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  flex-basis: calc((100% - 90px) / 4);
-  margin-left: 30px;
-  margin-top: 30px;
-
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .team-info {
